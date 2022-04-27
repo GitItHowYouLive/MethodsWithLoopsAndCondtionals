@@ -6,14 +6,66 @@ namespace MethodsWithLoopsAndConditionals
     {
         static void Main(string[] args)
         {
-            BadGambler();
+            /*BadGambler();
             MultiplesOfThree();
             Equality();
             EvenOdder();
             Positivity();
             CanVote();
             DigitChecker();
-            TimesTables();
+            TimesTables();*/
+
+
+            Console.WriteLine("Welcome to the methods lab!\nNot to be confused with other similar sounding laboratories...");
+
+            int selection = 1;
+
+            while(selection > 0 && selection < 9)
+            {
+                Console.WriteLine("\n\nPlease enter a number 1-8 to choose a method below. All other number will exit the program\n");
+                Console.WriteLine("1 - Gambling Simulator");
+                Console.WriteLine("2 - Multiplicity");
+                Console.WriteLine("3 - Equality Check");
+                Console.WriteLine("4 - Evens and Odds");
+                Console.WriteLine("5 - Positivity");
+                Console.WriteLine("6 - Voting Booth Experience");
+                Console.WriteLine("7 - Screen Check");
+                Console.WriteLine("8 - 3rd Grade Math Assistant\n");
+
+                selection = Int32.Parse(Console.ReadLine());
+
+                switch (selection)
+                {
+                    case 1:
+                        BadGambler();
+                        break;
+                    case 2:
+                        MultiplesOfThree();
+                        break;
+                    case 3:
+                        Equality();
+                        break;
+                    case 4:
+                        EvenOdder();
+                        break;
+                    case 5:
+                        Positivity();
+                        break;
+                    case 6:
+                        CanVote();
+                        break;
+                    case 7:
+                        DigitChecker();
+                        break;
+                    case 8:
+                        TimesTables();
+                        break;
+                    default:
+                        Console.WriteLine("Thanks for stopping by!");
+                        break;
+
+                }
+            }
         }
 
         static void BadGambler()
