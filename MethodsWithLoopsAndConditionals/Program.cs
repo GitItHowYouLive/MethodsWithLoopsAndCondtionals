@@ -38,6 +38,7 @@ namespace MethodsWithLoopsAndConditionals
                 Console.WriteLine("8 - 3rd Grade Math Assistant\n");
 
                 //Here we take input and assign it to the selection variable we declared earlier.
+                //We're using the unsafe Parse instead of TryParse here. Check out what happens with inaccurate input.
                 selection = int.Parse(Console.ReadLine());
 
                 //This is where the easiest fix for invalid input would be. TryParse is safer, but we'll need to handle it differently.
@@ -115,9 +116,23 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Enter any two numbers, and I'll check whether they're equal for ya!");
 
-            //*See earlier note about Parse/TryParse
-            var left = int.Parse(Console.ReadLine());
-            var right = int.Parse(Console.ReadLine());
+            //!!!LIVE UPDATE THIS IS THE IMPROVED VERSION WE DISCUSSED IN CLASS!!!
+            var tryAgain = int.TryParse(Console.ReadLine(), out var left);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = int.TryParse(Console.ReadLine(), out left);
+            }
+
+            tryAgain = int.TryParse(Console.ReadLine(), out var right);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = int.TryParse(Console.ReadLine(), out right);
+            }
+
             Console.WriteLine($"{left} and {right} " + (left==right?"are":"are not") + "equal");
         }
 
@@ -125,9 +140,16 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Sometimes, life can get you confused. Enter a number and we'll tell you whether it's odd or not.");
 
-            //*See earlier note about Parse/TryParse
+            //!!!LIVE UPDATE THIS IS THE IMPROVED VERSION WE DISCUSSED IN CLASS!!!
             //I used long here just in case the number is huge, but it works the same.
-            var number = Int64.Parse(Console.ReadLine());
+            var tryAgain = Int64.TryParse(Console.ReadLine(), out var number);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = Int64.TryParse(Console.ReadLine(), out number);
+            }
+
             Console.WriteLine(number % 2 == 0 ? "This number is even." : "This number is odd");
         }
 
@@ -135,9 +157,16 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Are you an Eyeore or a Tigger today? Enter a number and we'll determine its positivity.");
 
-            //*See earlier note about Parse/TryParse
+            //!!!LIVE UPDATE THIS IS THE IMPROVED VERSION WE DISCUSSED IN CLASS!!!
             //I used long here just in case the number is huge, but it works the same.
-            var upDown = Int64.Parse(Console.ReadLine());
+            var tryAgain = Int64.TryParse(Console.ReadLine(), out var upDown);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = Int64.TryParse(Console.ReadLine(), out upDown);
+            }
+
             if (upDown == 0)
             {
                 Console.WriteLine("Zero defies definition");
@@ -156,8 +185,14 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("Welcome to the voting station. Please enter your age.");
 
-            //Here is an actual implementation of TryParse. Invalid inputs are treated as zero. Notice the difference between invalid input in these methods vs earlier ones.
-            int.TryParse(Console.ReadLine(), out var age);
+            //Here is an actual implementation of TryParse. !!!LIVE UPDATE THIS IS THE IMPROVED VERSION WE DISCUSSED IN CLASS!!!
+            bool tryAgain = int.TryParse(Console.ReadLine(), out var age);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = int.TryParse(Console.ReadLine(), out age);
+            }
 
             Console.WriteLine(age>=18?"Please proceed to voting area.":"Sorry Charlie, ya ain't old enough!");
         }
@@ -166,8 +201,15 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("I only like numbers that fit on my miniscreen. Please enter a number to check.");
 
-            //Here is an actual implementation of TryParse. Invalid inputs are treated as zero. Notice the difference between invalid input in these methods vs earlier ones.
-            int.TryParse(Console.ReadLine(), out var digit);
+            //Here is an actual implementation of TryParse. !!!LIVE UPDATE THIS IS THE IMPROVED VERSION WE DISCUSSED IN CLASS!!!
+            bool tryAgain = int.TryParse(Console.ReadLine(), out var digit);
+
+            while (!tryAgain)
+            {
+                Console.WriteLine("That's totally not a valid number. Try again.");
+                tryAgain = int.TryParse(Console.ReadLine(), out digit);
+            }
+
             Console.WriteLine($"{digit} " + (digit > -10&&digit < 10?"does":"does not") + " fit on my miniscreen.");
         }
 
@@ -175,7 +217,7 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.WriteLine("I love to help with math! Which times tables can I calculate for you?");
 
-            //Here is an actual implementation of TryParse. Invalid inputs are treated as zero. Notice the difference between invalid input in these methods vs earlier ones.
+            //Here is an actual implementation of TryParse. Invalid inputs are treated as zero. Notice the difference between invalid input in this method vs earlier ones.
             int.TryParse(Console.ReadLine(), out var bass);
             for (var i = 1; i <= 12 ; i++)
             {
