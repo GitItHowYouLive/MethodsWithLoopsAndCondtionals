@@ -1,0 +1,16 @@
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.exe
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.deps.json
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.runtimeconfig.json
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.runtimeconfig.dev.json
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.dll
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\bin\Debug\net5.0\MethodsWithLoopsAndConditionals.pdb
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.csproj.AssemblyReference.cache
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.AssemblyInfoInputs.cache
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.AssemblyInfo.cs
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.csproj.CoreCompileInputs.cache
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.dll
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\refint\MethodsWithLoopsAndConditionals.dll
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.pdb
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\MethodsWithLoopsAndConditionals.genruntimeconfig.cache
+C:\Users\Terrence\Desktop\Repos\MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals\obj\Debug\net5.0\ref\MethodsWithLoopsAndConditionals.dll
