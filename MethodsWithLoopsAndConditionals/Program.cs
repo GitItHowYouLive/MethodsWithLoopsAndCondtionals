@@ -77,9 +77,13 @@ namespace MethodsWithLoopsAndConditionals
                 }
             }
         }
+        
+
+        //A few of the methods below have been modified slightly to accept and use user input.
 
         static void BadGambler()
         {
+            //Added a story to this one because why not?
             Console.WriteLine("Press any key to play slots.");
 
             //I used ReadKey instead of ReadLine here since we don't really need any input. ReadKey only looks at the next key press instead of waiting for the user to press enter.
@@ -94,6 +98,7 @@ namespace MethodsWithLoopsAndConditionals
 
         static void MultiplesOfThree()
         {
+            //Changed this one to print multiples of user input instead of just three.
             Console.WriteLine("This method will simply print all multiples of any digit that are three digits or less.");
             Console.WriteLine("Please enter a one digit number:");
 
